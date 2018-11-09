@@ -104,17 +104,17 @@
 
 
 
-<meta name="description" content="写在前面  最近闲着没事，就折腾了一下angular-cli,官方文档anguar-cli, 由于许多东西还在研究，后续继续更新… angular-cli 命令合集项目生成12345$ npm install -g @angular/cli   &quot;全局安装&quot;$ ng new myProject   &quot;创建新项目 myProject 是项目文件名&quot;$ cd myProject   &quot;进入 myPro">
+<meta name="description" content="写在前面  最近闲着没事，就折腾了一下angular-cli,官方文档anguar-cli, 由于许多东西还在研究，后续持续更新… angular-cli 命令合集项目生成12345$ npm install -g @angular/cli   &quot;全局安装&quot;$ ng new myProject   &quot;创建新项目 myProject 是项目文件名&quot;$ cd myProject   &quot;进入 myPro">
 <meta property="og:type" content="article">
 <meta property="og:title" content="angular-cli">
 <meta property="og:url" content="https://zq562895852.github.io/2018/11/07/home/index.html">
 <meta property="og:site_name" content="张旗">
-<meta property="og:description" content="写在前面  最近闲着没事，就折腾了一下angular-cli,官方文档anguar-cli, 由于许多东西还在研究，后续继续更新… angular-cli 命令合集项目生成12345$ npm install -g @angular/cli   &quot;全局安装&quot;$ ng new myProject   &quot;创建新项目 myProject 是项目文件名&quot;$ cd myProject   &quot;进入 myPro">
+<meta property="og:description" content="写在前面  最近闲着没事，就折腾了一下angular-cli,官方文档anguar-cli, 由于许多东西还在研究，后续持续更新… angular-cli 命令合集项目生成12345$ npm install -g @angular/cli   &quot;全局安装&quot;$ ng new myProject   &quot;创建新项目 myProject 是项目文件名&quot;$ cd myProject   &quot;进入 myPro">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-09T06:40:53.812Z">
+<meta property="og:updated_time" content="2018-11-09T06:47:56.741Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="angular-cli">
-<meta name="twitter:description" content="写在前面  最近闲着没事，就折腾了一下angular-cli,官方文档anguar-cli, 由于许多东西还在研究，后续继续更新… angular-cli 命令合集项目生成12345$ npm install -g @angular/cli   &quot;全局安装&quot;$ ng new myProject   &quot;创建新项目 myProject 是项目文件名&quot;$ cd myProject   &quot;进入 myPro">
+<meta name="twitter:description" content="写在前面  最近闲着没事，就折腾了一下angular-cli,官方文档anguar-cli, 由于许多东西还在研究，后续持续更新… angular-cli 命令合集项目生成12345$ npm install -g @angular/cli   &quot;全局安装&quot;$ ng new myProject   &quot;创建新项目 myProject 是项目文件名&quot;$ cd myProject   &quot;进入 myPro">
 
 
 
@@ -388,7 +388,7 @@
       
 
       
-        <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>  最近闲着没事，就折腾了一下angular-cli,官方文档<a href="https://cli.angular.io" target="_blank" rel="noopener">anguar-cli</a>, 由于许多东西还在研究，后续继续更新…</p>
+        <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>  最近闲着没事，就折腾了一下angular-cli,官方文档<a href="https://cli.angular.io" target="_blank" rel="noopener">anguar-cli</a>, 由于许多东西还在研究，后续持续更新…</p>
 <h2 id="angular-cli-命令合集"><a href="#angular-cli-命令合集" class="headerlink" title="angular-cli 命令合集"></a>angular-cli 命令合集</h2><h3 id="项目生成"><a href="#项目生成" class="headerlink" title="项目生成"></a>项目生成</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g @angular/cli   <span class="string">"全局安装"</span></span><br><span class="line">$ ng new myProject   <span class="string">"创建新项目 myProject 是项目文件名"</span></span><br><span class="line">$ <span class="built_in">cd</span> myProject   <span class="string">"进入 myProject 文件夹"</span></span><br><span class="line">$ ng server   <span class="string">"server/serve都可以，但是我碰到serve启动不成功的情况，这可能和版本更新有关。默认情况下ng会安装依赖，不需要npm install 就可以直接启动"</span></span><br><span class="line">$ ng new myProject --routing   <span class="string">"这个命令可以直接生成带有路由的项目，一般都会用的到，当然除了--routing还有其他的参数--prefix组件的前缀"</span></span><br></pre></td></tr></table></figure>
 <h3 id="创建项目具体模块"><a href="#创建项目具体模块" class="headerlink" title="创建项目具体模块"></a>创建项目具体模块</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ ng generate class my-new-class              // 新建 class</span><br><span class="line">$ ng generate component my-new-component      // 新建组件</span><br><span class="line">$ ng generate directive my-new-directive      // 新建指令</span><br><span class="line">$ ng generate enum my-new-enum                // 新建枚举</span><br><span class="line">$ ng generate module my-new-module            // 新建模块</span><br><span class="line">$ ng generate pipe my-new-pipe                // 新建管道</span><br><span class="line">$ ng generate service my-new-service          // 新建服务</span><br></pre></td></tr></table></figure>
 <p>  简写(使用命令的好处是不用在文件来回引入，引入文件很多，很容易遗漏)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ ng g cl my-new-class        // 新建 class</span><br><span class="line">$ ng g c my-new-component     // 新建组件</span><br><span class="line">$ ng g d my-new-directive     // 新建指令</span><br><span class="line">$ ng g e my-new-enum          // 新建枚举</span><br><span class="line">$ ng g m my-new-module        // 新建模块</span><br><span class="line">$ ng g p my-new-pipe          // 新建管道</span><br><span class="line">$ ng g s my-new-service       // 新建服务</span><br></pre></td></tr></table></figure></p>
@@ -507,7 +507,7 @@
               <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="张旗">
             
               <p class="site-author-name" itemprop="name">张旗</p>
-              <p class="site-description motion-element" itemprop="description">大前端 ———— 一只奔跑的蜗牛</p>
+              <p class="site-description motion-element" itemprop="description">大前端 —— 一只奔跑的蜗牛</p>
           </div>
 
           <nav class="site-state motion-element">
