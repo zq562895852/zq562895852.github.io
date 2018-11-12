@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zq562895852.github.io/"/>
-  <updated>2018-11-09T06:42:05.248Z</updated>
+  <updated>2018-11-12T07:03:16.374Z</updated>
   <id>https://zq562895852.github.io/</id>
   
   <author>
@@ -17,19 +17,19 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>angular4.x</title>
-    <link href="https://zq562895852.github.io/2018/11/09/index/"/>
-    <id>https://zq562895852.github.io/2018/11/09/index/</id>
-    <published>2018-11-09T05:45:11.630Z</published>
-    <updated>2018-11-09T06:42:05.248Z</updated>
+    <title>angular4.x(基础篇一)</title>
+    <link href="https://zq562895852.github.io/2018/11/12/index/"/>
+    <id>https://zq562895852.github.io/2018/11/12/index/</id>
+    <published>2018-11-12T02:12:43.000Z</published>
+    <updated>2018-11-12T07:03:16.374Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="持续更新。。。"><a href="#持续更新。。。" class="headerlink" title="持续更新。。。"></a>持续更新。。。</h2>]]></content>
+    <content type="html"><![CDATA[<h2 id="文件介绍-angualr-cli生成的项目"><a href="#文件介绍-angualr-cli生成的项目" class="headerlink" title="文件介绍(angualr-cli生成的项目)"></a>文件介绍(angualr-cli生成的项目)</h2><h5 id="生成的项目最外层结构-如图-，主要都集中在src文件夹和angular-cli-json这个文件中"><a href="#生成的项目最外层结构-如图-，主要都集中在src文件夹和angular-cli-json这个文件中" class="headerlink" title="生成的项目最外层结构(如图)，主要都集中在src文件夹和angular-cli.json这个文件中"></a>生成的项目最外层结构(如图)，主要都集中在src文件夹和angular-cli.json这个文件中</h5><p> <img src="/2018/11/12/index/mulv.jpg" alt="生成的目录结构"></p><h5 id="angular-cli-json的主要信息"><a href="#angular-cli-json的主要信息" class="headerlink" title="angular-cli.json的主要信息"></a>angular-cli.json的主要信息</h5><p><img src="/2018/11/12/index/cli.jpg" alt="angular-cli.json的主要信息"></p><h5 id="src目录的主要信息"><a href="#src目录的主要信息" class="headerlink" title="src目录的主要信息"></a>src目录的主要信息</h5><p><img src="/2018/11/12/index/src.jpg" alt="src目录主要信息"></p><h5 id="main-ts入口信息"><a href="#main-ts入口信息" class="headerlink" title="main.ts入口信息"></a>main.ts入口信息</h5><p><img src="/2018/11/12/index/main.jpg" alt="main文件主要信息"></p><h5 id="app目录的主要信息"><a href="#app目录的主要信息" class="headerlink" title="app目录的主要信息"></a>app目录的主要信息</h5><p><img src="/2018/11/12/index/app.jpg" alt="app目录主要信息"></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;持续更新。。。&quot;&gt;&lt;a href=&quot;#持续更新。。。&quot; class=&quot;headerlink&quot; title=&quot;持续更新。。。&quot;&gt;&lt;/a&gt;持续更新。。。&lt;/h2&gt;
+        &lt;h2 id=&quot;文件介绍-angualr-cli生成的项目&quot;&gt;&lt;a href=&quot;#文件介绍-angualr-cli生成的项目&quot; class=&quot;headerlink&quot; title=&quot;文件介绍(angualr-cli生成的项目)&quot;&gt;&lt;/a&gt;文件介绍(angualr-cli生成的项目)
       
     
     </summary>

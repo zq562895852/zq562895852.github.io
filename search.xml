@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[angular4.x]]></title>
-    <url>%2F2018%2F11%2F09%2Findex%2F</url>
-    <content type="text"><![CDATA[持续更新。。。]]></content>
+    <title><![CDATA[angular4.x(基础篇一)]]></title>
+    <url>%2F2018%2F11%2F12%2Findex%2F</url>
+    <content type="text"><![CDATA[文件介绍(angualr-cli生成的项目)生成的项目最外层结构(如图)，主要都集中在src文件夹和angular-cli.json这个文件中 angular-cli.json的主要信息 src目录的主要信息 main.ts入口信息 app目录的主要信息]]></content>
   </entry>
   <entry>
     <title><![CDATA[angular-cli]]></title>
