@@ -91,7 +91,7 @@
 
 
 
-  <meta name="keywords" content="angular目录,">
+  <meta name="keywords" content="表单,">
 
 
 
@@ -104,24 +104,20 @@
 
 
 
-<meta name="description" content="文件介绍(angualr-cli生成的项目)生成的项目最外层结构(如图)，主要都集中在src文件夹和angular-cli.json这个文件中 angular-cli.json的主要信息 src目录的主要信息 main.ts入口信息 app目录的主要信息">
-<meta name="keywords" content="angular目录">
+<meta name="description" content="angular表单   注意:看到很多模板变量报错的，form表单的模块一定要引入正确，在app.module模块引入并不等于全局模式，所以在引入组件的地方一定引入表单的模块,我是在路由模块引入的，因为我的组件多数都在路由文件中；记得不要放在app.module哪个组件需要form模块，就在引入组件的地方引入下面的模块，最后在元数据中imports  1import &amp;#123; FormsMod">
+<meta name="keywords" content="表单">
 <meta property="og:type" content="article">
-<meta property="og:title" content="angular(基础篇-文件信息)">
-<meta property="og:url" content="https://zq562895852.github.io/2018/11/12/index/index.html">
+<meta property="og:title" content="angular(基础篇-表单)">
+<meta property="og:url" content="https://zq562895852.github.io/2018/11/24/forms/index.html">
 <meta property="og:site_name" content="张旗">
-<meta property="og:description" content="文件介绍(angualr-cli生成的项目)生成的项目最外层结构(如图)，主要都集中在src文件夹和angular-cli.json这个文件中 angular-cli.json的主要信息 src目录的主要信息 main.ts入口信息 app目录的主要信息">
+<meta property="og:description" content="angular表单   注意:看到很多模板变量报错的，form表单的模块一定要引入正确，在app.module模块引入并不等于全局模式，所以在引入组件的地方一定引入表单的模块,我是在路由模块引入的，因为我的组件多数都在路由文件中；记得不要放在app.module哪个组件需要form模块，就在引入组件的地方引入下面的模块，最后在元数据中imports  1import &amp;#123; FormsMod">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://zq562895852.github.io/2018/11/12/index/mulv.jpg">
-<meta property="og:image" content="https://zq562895852.github.io/2018/11/12/index/cli.jpg">
-<meta property="og:image" content="https://zq562895852.github.io/2018/11/12/index/src.jpg">
-<meta property="og:image" content="https://zq562895852.github.io/2018/11/12/index/main.jpg">
-<meta property="og:image" content="https://zq562895852.github.io/2018/11/12/index/app.jpg">
-<meta property="og:updated_time" content="2018-11-24T02:49:24.946Z">
+<meta property="og:image" content="https://zq562895852.github.io/2018/11/24/forms/temForm.jpg">
+<meta property="og:updated_time" content="2018-11-26T11:25:50.094Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="angular(基础篇-文件信息)">
-<meta name="twitter:description" content="文件介绍(angualr-cli生成的项目)生成的项目最外层结构(如图)，主要都集中在src文件夹和angular-cli.json这个文件中 angular-cli.json的主要信息 src目录的主要信息 main.ts入口信息 app目录的主要信息">
-<meta name="twitter:image" content="https://zq562895852.github.io/2018/11/12/index/mulv.jpg">
+<meta name="twitter:title" content="angular(基础篇-表单)">
+<meta name="twitter:description" content="angular表单   注意:看到很多模板变量报错的，form表单的模块一定要引入正确，在app.module模块引入并不等于全局模式，所以在引入组件的地方一定引入表单的模块,我是在路由模块引入的，因为我的组件多数都在路由文件中；记得不要放在app.module哪个组件需要form模块，就在引入组件的地方引入下面的模块，最后在元数据中imports  1import &amp;#123; FormsMod">
+<meta name="twitter:image" content="https://zq562895852.github.io/2018/11/24/forms/temForm.jpg">
 
 
 
@@ -151,13 +147,13 @@
 
 
 
-  <link rel="canonical" href="https://zq562895852.github.io/2018/11/12/index/">
+  <link rel="canonical" href="https://zq562895852.github.io/2018/11/24/forms/">
 
 
 
 
 
-  <title>angular(基础篇-文件信息) | 张旗</title>
+  <title>angular(基础篇-表单) | 张旗</title>
   
 
 
@@ -327,7 +323,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zq562895852.github.io/2018/11/12/index/">
+    <link itemprop="mainEntityOfPage" href="https://zq562895852.github.io/2018/11/24/forms/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="张旗">
@@ -344,7 +340,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">angular(基础篇-文件信息)</h1>
+          <h1 class="post-title" itemprop="name headline">angular(基础篇-表单)</h1>
         
 
         <div class="post-meta">
@@ -356,8 +352,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-12T10:12:43+08:00">
-                2018-11-12
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-24T11:35:27+08:00">
+                2018-11-24
               </time>
             
 
@@ -396,7 +392,7 @@
 
           
           
-             <span id="/2018/11/12/index/" class="leancloud_visitors" data-flag-title="angular(基础篇-文件信息)">
+             <span id="/2018/11/24/forms/" class="leancloud_visitors" data-flag-title="angular(基础篇-表单)">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -427,11 +423,23 @@
       
 
       
-        <h2 id="文件介绍-angualr-cli生成的项目"><a href="#文件介绍-angualr-cli生成的项目" class="headerlink" title="文件介绍(angualr-cli生成的项目)"></a>文件介绍(angualr-cli生成的项目)</h2><h5 id="生成的项目最外层结构-如图-，主要都集中在src文件夹和angular-cli-json这个文件中"><a href="#生成的项目最外层结构-如图-，主要都集中在src文件夹和angular-cli-json这个文件中" class="headerlink" title="生成的项目最外层结构(如图)，主要都集中在src文件夹和angular-cli.json这个文件中"></a>生成的项目最外层结构(如图)，主要都集中在src文件夹和angular-cli.json这个文件中</h5><p><img src="/2018/11/12/index/mulv.jpg" alt="生成的目录结构"></p>
-<h5 id="angular-cli-json的主要信息"><a href="#angular-cli-json的主要信息" class="headerlink" title="angular-cli.json的主要信息"></a>angular-cli.json的主要信息</h5><p><img src="/2018/11/12/index/cli.jpg" alt="angular-cli.json的主要信息"></p>
-<h5 id="src目录的主要信息"><a href="#src目录的主要信息" class="headerlink" title="src目录的主要信息"></a>src目录的主要信息</h5><p><img src="/2018/11/12/index/src.jpg" alt="src目录主要信息"></p>
-<h5 id="main-ts入口信息"><a href="#main-ts入口信息" class="headerlink" title="main.ts入口信息"></a>main.ts入口信息</h5><p><img src="/2018/11/12/index/main.jpg" alt="main文件主要信息"></p>
-<h5 id="app目录的主要信息"><a href="#app目录的主要信息" class="headerlink" title="app目录的主要信息"></a>app目录的主要信息</h5><p><img src="/2018/11/12/index/app.jpg" alt="app目录主要信息"></p>
+        <h3 id="angular表单"><a href="#angular表单" class="headerlink" title="angular表单"></a>angular表单</h3><hr>
+<p>  注意:看到很多模板变量报错的，form表单的模块一定要引入正确，在app.module模块引入并不等于全局模式，所以在引入组件的地方一定引入表单的模块,我是在路由模块引入的，因为我的组件多数都在路由文件中；记得不要放在app.module哪个组件需要form模块，就在引入组件的地方引入下面的模块，最后在元数据中imports<br>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import &#123; FormsModule,ReactiveFormsModule &#125; from <span class="string">'@angular/forms'</span>;</span><br></pre></td></tr></table></figure></p>
+<hr>
+<ol>
+<li><p>模板驱动表单(FormsModule)<br>angular封装了处理了表单，这里form和原生的不太一样,表单是经过处理的，不会刷新页面</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">&lt;form <span class="comment">#myForm='ngForm' (ngSubmit)="onSubmit(myForm.value)"   novalidate &gt;</span></span><br><span class="line"><span class="string">'这里的模板变量必须是ngForm，表单的内容会以对象的形式挂载在模板变量的value上'</span></span><br><span class="line">   &lt;div class=<span class="string">"form-content"</span>&gt;</span><br><span class="line">     &lt;div class=<span class="string">"form-group"</span> &gt;</span><br><span class="line">       用户名&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> ngModel name=<span class="string">'username'</span> id=<span class="string">"username"</span>  </span><br><span class="line">       //<span class="string">'使用ngModel双向绑定数据，必须要有name属性，这个也是挂载模板变量身上的属性名'</span></span><br><span class="line">       class=<span class="string">"form-control input-underline input-lg"</span>  minlength=<span class="string">"4"</span> required </span><br><span class="line">        placeholder=<span class="string">"username"</span> <span class="comment">#username="ngModel"&gt; '这里的模板变量可以作为提示的判断'</span></span><br><span class="line">     &lt;/div&gt;</span><br><span class="line">     &lt;div [hidden]=<span class="string">"username.valid || username.pristine"</span> //<span class="string">'这个是根据模板变量#username="ngModel" 拿到的值 可作为提示用'</span></span><br><span class="line">           class=<span class="string">"alert alert-danger"</span>&gt;</span><br><span class="line">         username is required</span><br><span class="line">       &lt;/div&gt;</span><br><span class="line">     &lt;div class=<span class="string">"form-group"</span> &gt;</span><br><span class="line">       手机号&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> id=<span class="string">"mobeil"</span> ngModel name=<span class="string">'phone'</span> </span><br><span class="line">        class=<span class="string">"form-control input-underline input-lg"</span>  minlength=<span class="string">"4"</span>  </span><br><span class="line">        placeholder=<span class="string">"Password"</span> &gt;</span><br><span class="line">     &lt;/div&gt;</span><br><span class="line">     &lt;div ngModelGroup=<span class="string">"passwordGroup"</span>&gt;// <span class="string">'ngModelGroup是用来分组的，可以把多个分成一组放在myForm.value对象的一个属性上'</span></span><br><span class="line">       &lt;div class=<span class="string">"form-group"</span> &gt;</span><br><span class="line">         密码&lt;input <span class="built_in">type</span>=<span class="string">"password"</span> id=<span class="string">"password"</span> ngModel name=<span class="string">'password'</span></span><br><span class="line">           class=<span class="string">"form-control input-underline input-lg"</span>  minlength=<span class="string">"4"</span> </span><br><span class="line">            placeholder=<span class="string">"Password"</span> &gt;</span><br><span class="line">       &lt;/div&gt;</span><br><span class="line">       &lt;div class=<span class="string">"form-group"</span> &gt;</span><br><span class="line">         确认密码&lt;input <span class="built_in">type</span>=<span class="string">"password"</span> id=<span class="string">"cpassword"</span> ngModel name=<span class="string">'confimp'</span> </span><br><span class="line">          class=<span class="string">"form-control input-underline input-lg"</span>  minlength=<span class="string">"4"</span>  </span><br><span class="line">          placeholder=<span class="string">"Password"</span> &gt;</span><br><span class="line">       &lt;/div&gt;</span><br><span class="line">     &lt;/div&gt;</span><br><span class="line">     &lt;button <span class="built_in">type</span>=<span class="string">"submit"</span> class=<span class="string">"btn rounded-btn"</span> &gt;Log <span class="keyword">in</span>&lt;/button&gt;</span><br><span class="line">   &lt;/div&gt;</span><br><span class="line"> &lt;/form&gt;</span><br></pre></td></tr></table></figure>
+<p>对象的形式<br><img src="/2018/11/24/forms/temForm.jpg" alt="form的数据形式"><br>模板表单有三个主要的指令 表单的变量 #myForm=’ngForm’ ngForm不可变， ngModel 双向数据绑定，记得name属性<br>ngModelGroup=”passwordGroup” 这个分组用，个人感觉用处不大。</p>
+</li>
+<li><p>响应式表单(ReactiveFormsModule)<br>demo-template中</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&lt;form [formGroup]=<span class="string">"myform"</span> (ngSubmit)=<span class="string">"onSubmit()"</span>&gt;<span class="string">'视图和myform关联'</span></span><br><span class="line">      &lt;div class=<span class="string">"form-content"</span>&gt;</span><br><span class="line">        &lt;div class=<span class="string">"form-group"</span> &gt;</span><br><span class="line">          用户名&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> formControlName=<span class="string">"username"</span>  id=<span class="string">"username"</span>  class=<span class="string">"form-control input-underline input-lg"</span>  minlength=<span class="string">"4"</span> required  placeholder=<span class="string">"Username"</span> &gt; <span class="string">'使用formControlName绑定字段'</span></span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">        &lt;div class=<span class="string">"form-group"</span> &gt;</span><br><span class="line">          手机号&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> id=<span class="string">"mobeil"</span> formControlName=<span class="string">'phone'</span>  class=<span class="string">"form-control input-underline input-lg"</span>  minlength=<span class="string">"4"</span>  placeholder=<span class="string">"Password"</span> &gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">        &lt;div class=<span class="string">"form-group"</span> formArrayName=<span class="string">'emails'</span>&gt; <span class="string">'使用formArrayName分组数据'</span></span><br><span class="line">          &lt;ul&gt;</span><br><span class="line">            &lt;li *ngFor=<span class="string">"let email of myform.get('emails').controls; let i=index"</span>&gt;<span class="string">'获取数组数据并循环'</span></span><br><span class="line">              邮箱-&#123;&#123;i+1&#125;&#125; &lt;input <span class="built_in">type</span>=<span class="string">"text"</span> [formControlName]=<span class="string">'i'</span>  &gt; &lt;/li&gt; <span class="string">'利用索引绑定数据，记得用[],不知道为什么一会要用[]其他又不用，不得不吐槽一下这个坑爹的angular！！！'</span></span><br><span class="line">          &lt;/ul&gt;</span><br><span class="line">          &lt;button (click)=<span class="string">"addEmail()"</span>&gt;add&lt;/button&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">          &lt;div formGroupName=<span class="string">'confirm'</span>&gt;<span class="string">'分组'</span></span><br><span class="line">            &lt;div class=<span class="string">"form-group"</span> &gt;</span><br><span class="line">              密码&lt;input <span class="built_in">type</span>=<span class="string">"password"</span> id=<span class="string">"password"</span> formControlName=<span class="string">'password'</span>  class=<span class="string">"form-control input-underline input-lg"</span>  minlength=<span class="string">"4"</span>  placeholder=<span class="string">"Password"</span> &gt;</span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">            &lt;div class=<span class="string">"form-group"</span> &gt;</span><br><span class="line">              确认密码&lt;input <span class="built_in">type</span>=<span class="string">"password"</span> id=<span class="string">"cpassword"</span> formControlName=<span class="string">'confimp'</span>  class=<span class="string">"form-control input-underline input-lg"</span>  minlength=<span class="string">"4"</span>  placeholder=<span class="string">"Password"</span> &gt;</span><br><span class="line">            &lt;/div&gt;</span><br><span class="line">          &lt;/div&gt;</span><br><span class="line">        &lt;button <span class="built_in">type</span>=<span class="string">"submit"</span> class=<span class="string">"btn rounded-btn"</span> &gt;Log <span class="keyword">in</span>&lt;/button&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line"> &lt;/form&gt;</span><br></pre></td></tr></table></figure>
+<p>组件中</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">1. import &#123;FormBuilder, FormControl, FormGroup, FormArray,Validators&#125; from <span class="string">'@angular/forms'</span>;</span><br><span class="line">   <span class="string">'引入'</span></span><br><span class="line">2. public myform = new FormGroup(&#123;</span><br><span class="line">             username: new FormControl(),</span><br><span class="line">             phone: new FormControl(),</span><br><span class="line">             confirm:new FormGroup(&#123;</span><br><span class="line">             password: new FormControl(),</span><br><span class="line">             confimp: new FormControl(),</span><br><span class="line">             &#125;),</span><br><span class="line">             emails:new FormArray([</span><br><span class="line">             new FormControl(),</span><br><span class="line">             ])</span><br><span class="line">         &#125;);</span><br><span class="line">     <span class="string">'声明'</span></span><br><span class="line">3. <span class="function"><span class="title">onSubmit</span></span>()&#123;</span><br><span class="line">     console.log(this.myform.value);</span><br><span class="line">   &#125; </span><br><span class="line">   <span class="string">'数据挂载this.myform.value，是对象形式'</span></span><br><span class="line">4. <span class="function"><span class="title">addEmail</span></span>()&#123;</span><br><span class="line">     <span class="built_in">let</span> emails = this.myform.get(<span class="string">'emails'</span>) as FormArray;</span><br><span class="line">     emails.push(new FormControl())</span><br><span class="line">   &#125;  </span><br><span class="line">  <span class="string">'这个感觉也是蛮坑的，获取emails数据不能直接取，要用这种方式！！！'</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<hr>
+<p>  还有很多内容，包括表单校验，FormBuilder服务，校验的内置方法规则，以及自定义校验规则，<br>  但整体感觉相当繁琐，一点都不实用，这里就不做过多介绍，可以去官方文档研究！<br>  吐槽一下官方文档：文档内容不是很清晰，坑很多，试错成本较大，而且没有常见问题的说明，个人觉得文档很糟糕！！！</p>
+<hr>
 
       
     </div>
@@ -454,7 +462,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/angular目录/" rel="tag"><i class="fa fa-tag"></i> angular目录</a>
+            <a href="/tags/表单/" rel="tag"><i class="fa fa-tag"></i> 表单</a>
           
         </div>
       
@@ -467,8 +475,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/07/home/" rel="next" title="angular-cli">
-                <i class="fa fa-chevron-left"></i> angular-cli
+              <a href="/2018/11/22/basis-route/" rel="next" title="angular(基础篇-路由)">
+                <i class="fa fa-chevron-left"></i> angular(基础篇-路由)
               </a>
             
           </div>
@@ -476,10 +484,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/21/basis/" rel="prev" title="angular(基础篇-内置模块以及语法)">
-                angular(基础篇-内置模块以及语法) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -635,7 +639,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#文件介绍-angualr-cli生成的项目"><span class="nav-number">1.</span> <span class="nav-text">文件介绍(angualr-cli生成的项目)</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#生成的项目最外层结构-如图-，主要都集中在src文件夹和angular-cli-json这个文件中"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">生成的项目最外层结构(如图)，主要都集中在src文件夹和angular-cli.json这个文件中</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#angular-cli-json的主要信息"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">angular-cli.json的主要信息</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#src目录的主要信息"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">src目录的主要信息</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#main-ts入口信息"><span class="nav-number">1.0.0.4.</span> <span class="nav-text">main.ts入口信息</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#app目录的主要信息"><span class="nav-number">1.0.0.5.</span> <span class="nav-text">app目录的主要信息</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#angular表单"><span class="nav-number">1.</span> <span class="nav-text">angular表单</span></a></li></ol></div>
             
 
           </div>

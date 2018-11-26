@@ -91,7 +91,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="angular路由,">
 
 
 
@@ -105,6 +105,7 @@
 
 
 <meta name="description" content="路由路由配置 123456789101112131415161718192021222324252627&amp;lt;base href=&quot;/&quot;&amp;gt; &apos;在index.html的 &amp;lt;head&amp;gt; 标签下先添加一个 &amp;lt;base&amp;gt; 元素，来告诉路由器该如何合成导航用的 URL。&apos;import &amp;#123; RouterModule, Routes &amp;#125; from &apos;@angu">
+<meta name="keywords" content="angular路由">
 <meta property="og:type" content="article">
 <meta property="og:title" content="angular(基础篇-路由)">
 <meta property="og:url" content="https://zq562895852.github.io/2018/11/22/basis-route/index.html">
@@ -117,7 +118,7 @@
 <meta property="og:image" content="https://zq562895852.github.io/2018/11/22/basis-route/shili.jpg">
 <meta property="og:image" content="https://zq562895852.github.io/2018/11/22/basis-route/product.jpg">
 <meta property="og:image" content="https://zq562895852.github.io/2018/11/22/basis-route/resolve.jpg">
-<meta property="og:updated_time" content="2018-11-23T10:00:19.312Z">
+<meta property="og:updated_time" content="2018-11-24T03:45:41.522Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="angular(基础篇-路由)">
 <meta name="twitter:description" content="路由路由配置 123456789101112131415161718192021222324252627&amp;lt;base href=&quot;/&quot;&amp;gt; &apos;在index.html的 &amp;lt;head&amp;gt; 标签下先添加一个 &amp;lt;base&amp;gt; 元素，来告诉路由器该如何合成导航用的 URL。&apos;import &amp;#123; RouterModule, Routes &amp;#125; from &apos;@angu">
@@ -229,6 +230,16 @@
               <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
             
             关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
           </a>
         </li>
       
@@ -357,6 +368,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/angular/" itemprop="url" rel="index">
+                    <span itemprop="name">angular</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -396,7 +429,7 @@
 
       
         <h2 id="路由"><a href="#路由" class="headerlink" title="路由"></a>路由</h2><h3 id="路由配置"><a href="#路由配置" class="headerlink" title="路由配置"></a>路由配置</h3> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&lt;base href=<span class="string">"/"</span>&gt; <span class="string">'在index.html的 &lt;head&gt; 标签下先添加一个 &lt;base&gt; 元素，来告诉路由器该如何合成导航用的 URL。'</span></span><br><span class="line"></span><br><span class="line">import &#123; RouterModule, Routes &#125; from <span class="string">'@angular/router'</span>;<span class="string">'导入router相关模块'</span></span><br><span class="line"></span><br><span class="line">const appRoutes: Routes = [</span><br><span class="line"> &#123; path: <span class="string">'hero/:id'</span>,component: HeroDetailComponent </span><br><span class="line">   children:[</span><br><span class="line">       &#123;</span><br><span class="line">         path:<span class="string">''</span>,</span><br><span class="line">         component: component,</span><br><span class="line">       &#125;,</span><br><span class="line">       &#123;</span><br><span class="line">         path: <span class="string">'details/:id'</span>,</span><br><span class="line">         component: component,</span><br><span class="line">       &#125;</span><br><span class="line">     ]</span><br><span class="line"> &#125;,<span class="string">'可以用路由传值形如  hero/789'</span></span><br><span class="line"> &#123; path: <span class="string">'heroes'</span>,component: HeroListComponent,data: &#123; title:      <span class="string">'Heroes List'</span> &#125; <span class="string">'data属性存储数据的，'</span></span><br><span class="line"> &#125;,</span><br><span class="line"> &#123; path: <span class="string">''</span>,<span class="string">'根路径'</span></span><br><span class="line">     redirectTo: <span class="string">'/heroes'</span>,</span><br><span class="line">     pathMatch: <span class="string">'full'</span></span><br><span class="line"> &#125;,</span><br><span class="line"> &#123; path: <span class="string">'**'</span>, component: PageNotFoundComponent &#125;<span class="string">'404路由没匹配上'</span></span><br><span class="line"> ];<span class="string">'路由不能有 / 开头'</span></span><br><span class="line"> &lt;router-outlet&gt;&lt;/router-outlet&gt; <span class="string">'路由器出口'</span></span><br><span class="line"> <span class="string">'说明:如果有子路由跳转要用 ./ 表示子路由'</span> &lt;el-button [routerLink]=<span class="string">"['./details',id]"</span>  routerLinkActive=<span class="string">"active"</span> <span class="built_in">type</span>=<span class="string">"text"</span> size=<span class="string">"small"</span>&gt;详情&lt;/el-button&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="路由导航"><a href="#路由导航" class="headerlink" title="路由导航"></a>路由导航</h3> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">1.  &lt;a routerLink=<span class="string">"/heroes"</span> routerLinkActive=<span class="string">"active"</span>&gt;Heroes&lt;/a&gt; <span class="string">'这种静态路由不需要传值的'</span></span><br><span class="line">2. &lt;el-button [routerLink]=<span class="string">"['/singerDetail']"</span> [queryParams]=<span class="string">"&#123;id:id&#125;"</span> routerLinkActive=<span class="string">"active"</span> <span class="built_in">type</span>=<span class="string">"text"</span> size=<span class="string">"small"</span> (click)=<span class="string">"handle(scope,2)"</span>&gt;详情&lt;/el-button&gt;</span><br><span class="line"><span class="string">'url路径 /singerDetail?id=xxxxxx'</span></span><br><span class="line">this.singerId = this.routerInfo.snapshot.queryParams[<span class="string">'id'</span>];<span class="string">'组件中取值'</span></span><br><span class="line">3. &lt;el-button [routerLink]=<span class="string">"['/singerDetail',id]"</span>  routerLinkActive=<span class="string">"active"</span> <span class="built_in">type</span>=<span class="string">"text"</span> size=<span class="string">"small"</span>&gt;详情&lt;/el-button&gt;</span><br><span class="line"><span class="string">'url路径: /singerDetail/xxxxx;注意:这种情况路由中路径设置必须 singerDetail/:id  否则无法匹配无法跳转'</span></span><br><span class="line">this.singerId = this.routerInfo.snapshot.params[<span class="string">'id'</span>];<span class="string">'组件中取值'</span></span><br><span class="line"><span class="string">'以上是在模板中绑定跳转'</span></span><br><span class="line"></span><br><span class="line">4. this.router.navigate([<span class="string">'/singerDetail'</span>],&#123;queryParams:&#123; id: this.id &#125;&#125;); <span class="string">'js跳转，和2效果相同组件中取值也是一样'</span></span><br><span class="line">this.router.navigate([<span class="string">'/singerDetail'</span>,this.id]);<span class="string">'这个和3效果相同，路由配置也必须一样'</span></span><br><span class="line"><span class="string">'说明: snapshot快照模式，假如你很确定这个组件的实例永远、永远不会被复用，那就可以使用快照，但是：假如在同一个组件有两个按钮都是去到商品详情点击了第一个按钮并且这个组件没有销毁的情况下再点击第二个该按钮不会重新创建这个组件的实例的情况下，只是数据传递的不同，这种情况下要使用订阅模式(subscribe)'</span></span><br><span class="line"></span><br><span class="line"><span class="string">'以下是两种订阅模式'</span></span><br><span class="line">this.routerInfo.queryParams.subscribe((params:ParamMap)=&gt;&#123;</span><br><span class="line">   this.singerId = params[<span class="string">"id"</span>]</span><br><span class="line"> &#125;)<span class="string">'这个对应  /singerDetail?id=xxxxxx'</span></span><br><span class="line"></span><br><span class="line"> this.routerInfo.params.subscribe((params:ParamMap)=&gt;&#123;</span><br><span class="line">   this.singerId = params[<span class="string">"id"</span>]</span><br><span class="line"> &#125;) <span class="string">'这个对应  /singerDetail/xxxxxx'</span></span><br><span class="line"> <span class="string">'这两个必须对应，否则取不到传的参数'</span></span><br></pre></td></tr></table></figure>
+<h3 id="路由导航"><a href="#路由导航" class="headerlink" title="路由导航"></a>路由导航</h3> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">1.  &lt;a routerLink=<span class="string">"/heroes"</span> routerLinkActive=<span class="string">"active"</span>&gt;Heroes&lt;/a&gt; <span class="string">'这种静态路由不需要传值的'</span></span><br><span class="line">2. &lt;el-button [routerLink]=<span class="string">"['/singerDetail']"</span> [queryParams]=<span class="string">"&#123;id:id&#125;"</span> routerLinkActive=<span class="string">"active"</span> </span><br><span class="line">   <span class="built_in">type</span>=<span class="string">"text"</span> size=<span class="string">"small"</span> (click)=<span class="string">"handle(scope,2)"</span>&gt;详情&lt;/el-button&gt;</span><br><span class="line">   <span class="string">'url路径 /singerDetail?id=xxxxxx'</span></span><br><span class="line">this.singerId = this.routerInfo.snapshot.queryParams[<span class="string">'id'</span>];<span class="string">'组件中取值'</span></span><br><span class="line">3. &lt;el-button [routerLink]=<span class="string">"['/singerDetail',id]"</span>  routerLinkActive=<span class="string">"active"</span> <span class="built_in">type</span>=<span class="string">"text"</span> size=<span class="string">"small"</span>&gt;详情&lt;/el-button&gt;</span><br><span class="line"> <span class="string">'url路径: /singerDetail/xxxxx;注意:这种情况路由中路径设置必须 singerDetail/:id  否则无法匹配无法跳转'</span></span><br><span class="line"> this.singerId = this.routerInfo.snapshot.params[<span class="string">'id'</span>];<span class="string">'组件中取值'</span></span><br><span class="line"> <span class="string">'以上是在模板中绑定跳转'</span></span><br><span class="line"></span><br><span class="line">4. this.router.navigate([<span class="string">'/singerDetail'</span>],&#123;queryParams:&#123; id: this.id &#125;&#125;); <span class="string">'js跳转，和2效果相同组件中取值也是一样'</span></span><br><span class="line">   this.router.navigate([<span class="string">'/singerDetail'</span>,this.id]);<span class="string">'这个和3效果相同，路由配置也必须一样'</span></span><br><span class="line"> <span class="string">'说明: snapshot快照模式，假如你很确定这个组件的实例永远、永远不会被复用，那就可以使用快照，</span></span><br><span class="line"><span class="string">   但是：假如在同一个组件有两个按钮都是去到商品详情点击了第一个按钮并且这个组件没有销毁的情况</span></span><br><span class="line"><span class="string">   下再点击第二个该按钮不会重新创建这个组件的实例的情况下，只是数据传递的不同，这种情况下要使</span></span><br><span class="line"><span class="string">   用订阅模式(subscribe)'</span></span><br><span class="line"></span><br><span class="line"><span class="string">'以下是两种订阅模式'</span></span><br><span class="line">this.routerInfo.queryParams.subscribe((params:ParamMap)=&gt;&#123;</span><br><span class="line">   this.singerId = params[<span class="string">"id"</span>]</span><br><span class="line"> &#125;)<span class="string">'这个对应  /singerDetail?id=xxxxxx'</span></span><br><span class="line"></span><br><span class="line"> this.routerInfo.params.subscribe((params:ParamMap)=&gt;&#123;</span><br><span class="line">   this.singerId = params[<span class="string">"id"</span>]</span><br><span class="line"> &#125;) <span class="string">'这个对应  /singerDetail/xxxxxx'</span></span><br><span class="line"> <span class="string">'这两个必须对应，否则取不到传的参数'</span></span><br></pre></td></tr></table></figure>
 <h3 id="路由守卫-生命周期钩子"><a href="#路由守卫-生命周期钩子" class="headerlink" title="路由守卫(生命周期钩子)"></a>路由守卫(生命周期钩子)</h3><ol>
 <li><p>CanActivate: 处理导航到某个路由的情况（进入路由时触发事件）；</p>
 </li>
@@ -433,6 +466,12 @@
     
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/angular路由/" rel="tag"><i class="fa fa-tag"></i> angular路由</a>
+          
+        </div>
+      
 
       
       
@@ -451,6 +490,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/11/24/forms/" rel="prev" title="angular(基础篇-表单)">
+                angular(基础篇-表单) <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -534,14 +577,32 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
@@ -645,7 +706,7 @@
     <!-- 博客字数统计 -->
     <span class="site-pv">
       <i class="fa fa-pencil"></i>
-      博客全站共： <span class="post-count">2.9k</span> 字
+      博客全站共： <span class="post-count">3.9k</span> 字
     </span>
 </div>
 <!-- 新增访客统计代码 END-->
